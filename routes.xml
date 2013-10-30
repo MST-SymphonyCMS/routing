@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+
+    <!-- example 1 -->
+
+    <route from="/en/about-us/"  to="/about-us/" />
+    <route from="/de/ueber-uns/" to="/about-us/" />
+
+    <!-- example 2 -->
+
+    <route from="/:language/" to="/start/">
+
+        <filter parameter=":language" match="[a-z]{2}" />
+
+    </route>
+
+    <!-- example 3 -->
+
+    <route from="/:language/blog/:article/" to="/blog/:article/">
+
+        <filter parameter=":language" match="[a-z]{2}" />
+        <filter parameter=":article"  match="[\w\.-]+" />
+
+    </route>
+
+    <!-- example 4 -->
+
+    <route from="/:language/:country/" to="/country/:country/">
+
+        <filter parameter=":language" match="[a-z]{2}" />
+
+    </route>
+
+    <route from="/:language/:country/:city/" to="/city/:country/:city/">
+
+        <filter parameter=":language" match="[a-z]{2}" />
+
+    </route>
+
+</routes>

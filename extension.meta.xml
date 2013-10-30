@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="routing" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Routing</name>
+	<description lang="en">XML based frontend routing.</description>
+	<repo type="github">http://github.com/jensscherbl/routing</repo>
+	<url type="discuss">http://getsymphony.com/discuss/thread/104131</url>
+	<types>
+		<type>Workflow</type>
+		<type>Other</type>
+	</types>
+	<authors>
+		<author>
+			<name github="jensscherbl" symphony="jensscherbl" twitter="jensscherbl">Jens Scherbl</name>
+			<email>jens@webninjas.net</email>
+			<website>http://webninjas.net</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0" date="2013-10-27" min="2.3.4">
+			- Initial release
+		</release>
+	</releases>
+</extension>
