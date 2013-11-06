@@ -103,6 +103,8 @@ class Extension_Routing extends Extension
 
                 } else {
 
+                    self::$resolved = true;
+
                     throw new FrontendPageNotFoundException();
                 }
             }
