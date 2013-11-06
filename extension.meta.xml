@@ -16,6 +16,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.0.1" date="2013-11-07" min="2.3.4">
+			- Fixed issue where 404 page is not displayed
+		</release>
 		<release version="1.0" date="2013-10-27" min="2.3.4">
 			- Initial release
 		</release>
