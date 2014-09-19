@@ -25,7 +25,7 @@ class Extension_Routing extends Extension
         // add configuration
 
         Symphony::Configuration()->set('path', 'routes.xml', 'routing');
-        Administration::instance()->saveConfig();
+        Symphony::Configuration()->write();
 
         // create example
 
@@ -46,7 +46,7 @@ class Extension_Routing extends Extension
         // remove configuration
 
         Symphony::Configuration()->remove('routing');
-        Administration::instance()->saveConfig();
+        Symphony::Configuration()->write();
 
         // clear cache
 
